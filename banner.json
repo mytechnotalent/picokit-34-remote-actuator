@@ -1,0 +1,68 @@
+{
+  "eyebrow": "PICOKIT // LESSON 34",
+  "title": "PICOKIT // REMOTE ACTUATOR",
+  "subtitle": "GATEWAY COMMAND + SERVO POSITION + AUTHENTICATED ACK",
+  "accent": "#FF6E24",
+  "dim": "#9E4416",
+  "white": "#F3E2E0",
+  "cyan": "#7FD8E0",
+  "bg": "#110702",
+  "bg_edge": "#050200",
+  "icon": "antenna",
+  "panel_status": "ANGLE 90  ·  CMD SET  ·  ACK OK",
+  "chips": [
+    {
+      "label": "ANGLE",
+      "value": "90 deg"
+    },
+    {
+      "label": "CMD",
+      "value": "0x5A"
+    },
+    {
+      "label": "ACK",
+      "value": "ok"
+    },
+    {
+      "label": "RADIO",
+      "value": "-28 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway send node 34  ACT 90",
+    "[*] node 00034  seq 9  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 9",
+    "[+] command ACT 90 accepted  servo moved",
+    "[+] ack 0x5A sealed  uplink sent"
+  ],
+  "categories": [
+    "ACT",
+    "SERVO",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "RA-01",
+      "label": "target",
+      "value": "90 deg"
+    },
+    {
+      "tag": "RA-02",
+      "label": "error",
+      "value": "0 deg"
+    },
+    {
+      "tag": "RA-03",
+      "label": "ack",
+      "value": "0x5A"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  COMMAND  ·  ACTUATE  ·  RADIO  ==[ ACT ]=="
+  ],
+  "repo": "picokit-34-remote-actuator",
+  "layout": "stat",
+  "stat": "90"
+}
